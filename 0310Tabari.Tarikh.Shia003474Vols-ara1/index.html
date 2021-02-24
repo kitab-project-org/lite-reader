@@ -1357,7 +1357,7 @@
       console.log("loading volume " + vol);
       await $.getJSON(vol + ".json", function (json) {
         console.log(json)
-        $('#loading').style.display = "block";
+        $('#loading').css("display", "block");;
         $('#content').empty().append(json["content"]);
         /*console.log("json loaded");*/
         window.thisVolume = vol;
