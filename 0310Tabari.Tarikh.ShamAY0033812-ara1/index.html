@@ -2814,7 +2814,7 @@
 <i class="btn bi bi-info"></i>
 </a>
 <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-<div class="col-12" id="metadata-content"><label>char_length: 5930590</label><label>author_lat_full_name: none Abū Ǧaʿfar Muḥammad b. Ǧarīr b. Yazīd al-Ṭabarī</label><label>author_lat_shuhra: al-Ṭabarī</label><label>author_from_uri: Tabari</label><label>tags:  :: ShamAY@التاريخ</label><label>url: https://raw.githubusercontent.com/OpenITI/0325AH/master/data/0310Tabari/0310Tabari.Tarikh/0310Tabari.Tarikh.ShamAY0033812-ara1</label><label>tok_length: 1456993</label><label>status: sec</label><label>id: ShamAY0033812</label><label>ed_info: دار الكتب العلمية - بيروت</label><label>title_lat: Tarikh</label><label>title_ar: تاريخ الطبري - ط العلمية :: تاريخ الأمم والملوك</label><label>book: 0310Tabari.Tarikh</label><label>author_lat: Tabari :: al-Ṭabarī :: none Abū Ǧaʿfar Muḥammad b. Ǧarīr b. Yazīd al-Ṭabarī</label><label>author_ar: الطبري :: نoنe أبو جعفر محمد بن جرير بن يزيد الطبري</label><label>date: 0310</label><label>versionUri: 0310Tabari.Tarikh.ShamAY0033812-ara1</label>
+<div class="col-12" id="metadata-content"><label>char_length: 5930590</label><label>author_lat_full_name: none Abū Ǧaʿfar Muḥammad b. Ǧarīr b. Yazīd al-Ṭabarī</label><label>author_lat_shuhra: al-Ṭabarī</label><label>author_from_uri: Tabari</label><label>tags:  :: ShamAY@التاريخ</label><label>url: https://raw.githubusercontent.com/OpenITI/0325AH/master/data/0310Tabari/0310Tabari.Tarikh/0310Tabari.Tarikh.ShamAY0033812-ara1</label><label>tok_length: 1456993</label><label>status: sec</label><label>id: ShamAY0033812</label><label>ed_info: دار الكتب العلمية - بيروت</label><label>title_lat: Tarikh</label><label>title_ar: تاريخ الأمم والملوك :: تاريخ الطبري - ط العلمية</label><label>book: 0310Tabari.Tarikh</label><label>author_lat: Tabari :: al-Ṭabarī :: none Abū Ǧaʿfar Muḥammad b. Ǧarīr b. Yazīd al-Ṭabarī</label><label>author_ar: الطبري :: نoنe أبو جعفر محمد بن جرير بن يزيد الطبري</label><label>date: 0310</label><label>versionUri: 0310Tabari.Tarikh.ShamAY0033812-ara1</label>
 </div>
 </div>
 </div>
@@ -2888,7 +2888,7 @@
             top: rect.top + rect.height / 2 - viewHeight /2,
             behavior: 'smooth'
           });*/
-          var targetAnchor = document.getElementById(anchorId);
+          /*var targetAnchor = document.getElementById(anchorId);
           var contentDiv = document.getElementsByClassName("book-body")[0];
           var topPos = contentDiv.offsetTop;
           var windowSize = $(window).height();
@@ -2896,7 +2896,9 @@
           console.log("targetPos: " + targetAnchor.offsetTop);
           console.log("windowSize:" + windowSize)
           console.log("targetAnchor.offsetTop-windowSize/3 = " + (targetAnchor.offsetTop - topPos - windowSize / 2));
-          contentDiv.scrollTop = targetAnchor.offsetTop - topPos - windowSize / 2;
+          contentDiv.scrollTop = targetAnchor.offsetTop - topPos - windowSize / 2;*/
+          var targetAnchor = document.getElementById(anchorId);
+          targetAnchor.scrollIntoView({"block": "start"});
         });
       } else {
         /*move the volume page to the element with id=anchorId*/
@@ -2924,7 +2926,7 @@
           top: rect.top + rect.height / 2 - viewHeight /2,
           behavior: 'smooth'
         });*/
-        var targetAnchor = document.getElementById(anchorId);
+        /*var targetAnchor = document.getElementById(anchorId);
         var contentDiv = document.getElementsByClassName("book-body")[0];
         var topPos = contentDiv.offsetTop;
         var windowSize = $(window).height();
@@ -2932,7 +2934,9 @@
         console.log("targetPos: " + targetAnchor.offsetTop);
         console.log("windowSize:" + windowSize)
         console.log("targetAnchor.offsetTop-windowSize/3 = " + (targetAnchor.offsetTop - topPos - windowSize / 2));
-        contentDiv.scrollTop = targetAnchor.offsetTop - topPos - windowSize / 2;
+        contentDiv.scrollTop = targetAnchor.offsetTop - topPos - windowSize / 2;*/
+        var targetAnchor = document.getElementById(anchorId);
+        targetAnchor.scrollIntoView({"block": "start"});
       }
     }
 
@@ -3019,10 +3023,10 @@
     async function loadVolume(vol) {
       /*Load volume json */
       var page = pageSel.value;
+      $('#loading').show();
       console.log("loading volume " + vol);
       await $.getJSON(vol + ".json", function (json) {
         console.log(json)
-        $('#loading').css("display", "block");;
         $('#content').empty().append(json["content"]);
         /*console.log("json loaded");*/
         window.thisVolume = vol;
@@ -3057,9 +3061,9 @@
       var targetPage = pageSel.value;
       var pages = volPages[vol];
       var index = pages.indexOf(targetPage);
-      /*if (index > 0) {
+      if (index > 0) {
         targetPage = pages[index-1];
-      }*/
+      }
 
       console.log("targetPage: " + targetPage);
       var anchor = "v" + vol + "p" + targetPage;
