@@ -1,0 +1,22 @@
+{
+  "content": "\n<p>\n(1) هذا الفصل بنصه مكرر مع ما ينافي له في صحيفة 17 ولا معنى لذكره ههنا\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v06p010'> Vol. 06, p. 010</a>\n            </div>\n            \n</p>\n\n<p>\n(1) قال الشيخ رحمه الله هذه المسألة مذكورة في الوقف فلا حاجة الى اعادتها\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v06p274'> Vol. 06, p. 274</a>\n            </div>\n            \n</p>\n\n<p>\n(1) قد ذكرنا ذلك في الوقف\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v06p275'> Vol. 06, p. 275</a>\n            </div>\n            \n</p>\n",
+  "pages": [
+    "010",
+    "274",
+    "275"
+  ],
+  "volumes": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12"
+  ]
+}
