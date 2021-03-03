@@ -1,0 +1,15 @@
+{
+  "content": "\n<p>\n* نقل من الجزء العشرين من \"الكواكب\" المودع في خزانة المكتبة العمومية\nبدمشق في المدرسة الظاهرية.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v03p003'> Vol. 03, p. 003</a>\n            </div>\n            \n</p>\n\n<p>\n* ج1 ص221.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v03p139'> Vol. 03, p. 139</a>\n            </div>\n            \n</p>\n\n<p>\n* ج1 ص153 - هامش \"منهاج السنة\".\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v03p150'> Vol. 03, p. 150</a>\n            </div>\n            \n</p>\n",
+  "pages": [
+    "003",
+    "139",
+    "150"
+  ],
+  "volumes": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05"
+  ]
+}

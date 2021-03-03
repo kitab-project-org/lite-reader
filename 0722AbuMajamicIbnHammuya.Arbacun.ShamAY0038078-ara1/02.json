@@ -1,0 +1,14 @@
+{
+  "content": "\n<p>\nحاشية_____\n</p>\n\n<p>\n(1) غير واضح بالأصل.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p005'> Vol. 02, p. 005</a>\n            </div>\n            \n</p>\n\n<p>\nحاشية_____\n</p>\n\n<p>\n(1) غير واضح بالأصل.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p008'> Vol. 02, p. 008</a>\n            </div>\n            \n</p>\n\n<p>\nحاشية_____\n</p>\n\n<p>\n(1) كذا بالأصل.\n</p>\n\n<p>\n(2) غير واضح بالأصل.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p009'> Vol. 02, p. 009</a>\n            </div>\n            \n</p>\n\n<p>\nحاشية_____\n</p>\n\n<p>\n(1) غير واضح بالأصل.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p025'> Vol. 02, p. 025</a>\n            </div>\n            \n</p>\n\n<p>\nحاشية_____\n</p>\n\n<p>\n(1) غير واضح بالأصل.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p026'> Vol. 02, p. 026</a>\n            </div>\n             <span id='ms61'></span>\n</p>\n",
+  "pages": [
+    "005",
+    "008",
+    "009",
+    "025",
+    "026"
+  ],
+  "volumes": [
+    "01",
+    "02"
+  ]
+}
