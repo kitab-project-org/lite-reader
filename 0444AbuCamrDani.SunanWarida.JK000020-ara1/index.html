@@ -1,0 +1,332 @@
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta http-equiv="Content-Security-Policy" https:=""/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" rel="stylesheet"/>
+<link href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&amp;display=swap" rel="stylesheet"/>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="../css/stylev2.css" rel="stylesheet" type="text/css"/>
+<script crossorigin="anonymous" src="../js/CollapsibleLists.js" type="application/javascript"></script>
+<!-- <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/style/style-components.min.css" /> -->
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<div id="loading">
+<img alt="Loading..." id="loading-image" src="../img/spinner1.gif"/>
+</div>
+<div class="page-wrapper toggled" id="wrapper">
+<div id="sidebar-wrapper">
+<html><body><div class="card-header title-heading">فصول الكتاب</div><ul class="collapsibleList">
+</ul>
+</body></html></div>
+<div class="book body-inner" lang="ara">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom" style="direction: ltr;">
+<div class="mr-auto d-flex justify-content-left">
+<a class="navbar-brand ms-2" href="http://www.kitab-project.org" target="_blank">
+<img class="d-inline-block align-top" src="https://cdn.jsdelivr.net/gh/sohailmerchant/kitab-cdn@main/img/kitab-logo.png" width="60px"/>
+</a>
+</div>
+<div class="navbar-nav mx-auto btn-toolbar" style="direction: rtl;">
+<div class="d-flex justify-content-center">
+<form class="row" id="nav-form" style="margin-bottom: 0px;">
+<span class="btn col justify-content-center">ج:</span>
+<select class="col form-select pull-left" id="vol-select"></select>
+<span class="btn col justify-content-center">ص:</span>
+<select class="col form-select pull-left" id="page-select"></select>
+<button class="btn col pull-right mx-3" id="nav-submdit-btn" style="width: 100px;" type="submit" value="Go">Go</button>
+</form>
+</div>
+</div>
+<div class="btn-toolbar navbar-nav ml-auto d-flex justify-content-right">
+<div class="btn-group">
+<a class="nav-link pull-right" title="Go to top">
+<i class="btn bi bi-arrow-up-circle" id="back-to-top"></i>
+</a>
+<a class="nav-link pull-right" title="Increase fonts">
+<i class="btn bi bi-fonts font-default pull-left"></i>
+</a>
+<a class="nav-link pull-right" title="Turn light off">
+<i class="btn bi bi-lightbulb-off"></i>
+</a>
+<div class="nav-link pull-right dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="" data-bs-toggle="dropdown" id="dropdownMenuButton" role="button" title="Book Metadata">
+<i class="btn bi bi-info"></i>
+</a>
+<div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+<div class="col-12" id="metadata-content"><label>char_length: 219985</label><label>author_lat_full_name: </label><label>author_lat_shuhra: </label><label>author_from_uri: Abu Camr Dani</label><label>tags: CENT0500 :: _AJZA :: _CAQAID :: _HADITH :: _MILAL :: GAL@nodata :: JK@الأجزاء الموضوعية :: JK@الكتب المسندة :: JK@كتب العقائد المسندة :: JK@كتب العقائد والملل</label><label>url: https://raw.githubusercontent.com/OpenITI/0450AH/master/data/0444AbuCamrDani/0444AbuCamrDani.SunanWarida/0444AbuCamrDani.SunanWarida.JK000020-ara1</label><label>tok_length: 55053</label><label>status: sec</label><label>id: JK000020</label><label>ed_info: د. ضاء الله بن محمد إدريس المباركفوري :: الرياض :: 1416 :: دار العاصمة</label><label>title_lat: Sunan Warida</label><label>title_ar: السنن الواردة في الفتن :: السنن الواردة في الفتن وغوائلها والساعة وأشراطها</label><label>book: 0444AbuCamrDani.SunanWarida</label><label>author_lat: Abu Camr Dani</label><label>author_ar: أبو عمرو الداني :: أبو عمرو عثمان بن سعيد المقرئ الداني</label><label>date: 0444</label><label>versionUri: 0444AbuCamrDani.SunanWarida.JK000020-ara1</label>
+</div>
+</div>
+</div>
+<a class="nav-link pull-right" href="#menu-toggle" id="menu-toggle" title="Book Chapters">
+<i class="btn bi bi-list"></i></a>
+</div>
+</div>
+</nav>
+<div class="book-body fixed pt-5">
+<div class="row">
+<div class="col-12">
+<div class="row top-heading-panel content-outer-spacing">
+</div>
+</div>
+<div class="col-12" id="meta">
+</div>
+</div>
+<div class="row justify-content-md-center" id="book-main">
+<div class="col-lg-8 col-sm-12" id="content">
+</div>
+</div>
+<div class="row mt-5" id="footer">
+<div class="col-md-12">
+            The KITAB project is based at the Institute for the Study of Muslim Civilizations (ISMC) at Aga Khan
+            University, London, and has received funding from the European Research Council (ERC) under the European
+            Union's
+            Horizon 2020 research and innovation programme (Grant agreement No. 772989)
+
+          </div>
+<div class="col-md-12">
+<img alt="Logos" height="50" id="logos" src="../img/AKU-EU-ERC-three-logos.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+    var pageSel = document.getElementById("page-select");
+    var volSel = document.getElementById("vol-select");
+    var thisVolume = "01";
+    var volPages = {"01": ["177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "201", "202", "203", "204", "205", "206", "209", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "257", "258", "259", "260", "263", "264", "265", "266", "271", "272", "273", "275", "276", "277", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "292", "293", "294", "295", "299", "300", "301", "302", "303", "305", "307", "308", "309", "310", "311", "313", "314", "315", "317", "319", "320", "321", "322", "323", "324", "325", "326", "327", "331", "332", "333", "334", "335", "336", "337", "338", "341", "342", "343", "344", "345", "346", "347", "348", "349", "350", "351", "352", "355", "356", "357", "358", "359"], "02": ["360", "363", "364", "365", "366", "367", "368", "369", "370", "373", "374", "375", "381", "382", "383", "384", "385", "386", "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "401", "402", "403", "404", "405", "406", "407", "408", "409", "417", "418", "419", "423", "424", "425", "426", "427", "428", "429", "430", "431", "432", "433", "434", "439", "440", "441", "442", "443", "444", "445", "446", "447", "451", "453", "454", "455", "456", "457", "458", "459", "463", "464", "465", "466", "471", "472", "473", "474", "475", "476", "481", "482", "483", "484", "485", "486", "487", "488", "489", "490", "491", "492", "493", "494", "495", "503", "504", "505", "506", "507", "508", "509", "510"], "03": ["515", "516", "517", "518", "519", "520", "521", "522", "523", "524", "525", "526", "527", "528", "529", "533", "534", "535", "536", "537", "541", "542", "543", "544", "545", "546", "547", "548", "549", "550", "551", "555", "556", "557", "558", "561", "562", "563", "564", "565", "566", "567", "573", "574", "575", "576", "579", "580", "581", "582", "585", "586", "587", "588", "589", "590", "591", "592", "595", "596", "599", "600", "605", "609", "611", "612", "613", "614", "615", "616", "617", "618", "619", "620", "621", "622", "623", "624", "625", "626", "633", "634", "635", "636", "637", "638", "641", "642", "643", "644", "645", "646", "647", "648", "653", "654", "655", "659", "661", "663", "664", "665", "666", "667", "668", "669", "670", "671", "672", "673", "674", "675", "676", "677", "683", "684", "685", "686", "687", "688", "689", "690", "691", "692", "693", "694", "695", "696", "697", "698", "699", "700", "701", "702", "703", "707", "708", "709", "710", "711", "712", "713", "714", "715", "716", "717", "718", "719", "720", "721", "725", "726", "727", "728", "729", "730", "735", "739", "740", "741", "742", "743", "744", "745", "746", "747", "748", "749", "750", "751", "752"], "04": ["753", "761", "762", "763", "764", "765", "766", "767", "768", "773", "774", "775", "776", "777", "779", "780", "781", "783", "784", "785", "786", "789", "791", "792", "793", "797", "798", "799", "800", "801", "802", "807", "808", "813", "814", "817", "818", "819", "823", "824", "825", "826", "827", "828", "829", "830", "831", "835", "836", "837", "838", "839", "840", "841", "842", "843", "844", "845", "846", "847", "848", "849", "850", "851", "859", "861", "862", "863", "864", "869", "870", "871", "872", "873", "879", "880", "881", "882", "883", "884", "885", "886", "889", "890", "891", "892", "895", "896", "897", "901", "902", "903", "904", "905", "907", "908", "909", "910", "913", "914", "915", "916", "917", "919", "921", "922", "923", "924", "925", "927", "928", "929", "930", "931", "932", "933", "934", "935", "936", "937", "941", "943", "944", "945"], "05": ["949", "950", "951", "952", "953", "954", "955", "956", "957", "958", "959", "960", "961", "962", "963", "964", "969", "970", "971", "972", "973", "975", "976", "977", "978", "979", "980", "981", "982", "983", "984", "985", "986", "987", "988", "989", "990", "995", "996", "997", "998", "1003", "1004", "1005", "1006", "1011", "1012", "1015", "1016", "1021", "1022", "1023", "1029", "1030", "1031", "1032", "1033", "1034", "1035", "1036", "1037", "1038", "1039", "1040", "1041", "1042", "1043", "1044", "1045", "1046", "1047", "1048", "1049", "1050", "1051", "1052", "1053", "1054", "1055", "1056", "1057", "1058", "1059", "1060", "1061", "1062", "1063", "1064", "1065", "1073", "1074", "1075", "1076", "1081", "1082", "1083", "1084", "1089", "1090", "1091", "1092", "1093", "1094", "1095", "1096", "1097", "1098", "1099", "1100", "1101", "1102", "1103", "1104", "1105", "1106", "1107", "1108", "1109", "1110"], "06": ["1113", "1114", "1115", "1116", "1117", "1118", "1119", "1120", "1125", "1126", "1127", "1128", "1129", "1130", "1131", "1132", "1133", "1134", "1135", "1136", "1137", "1138", "1139", "1141", "1143", "1144", "1145", "1146", "1147", "1148", "1149", "1150", "1151", "1152", "1153", "1154", "1155", "1156", "1157", "1158", "1159", "1160", "1161", "1162", "1163", "1164", "1165", "1166", "1167", "1168", "1169", "1170", "1171", "1172", "1173", "1174", "1175", "1176", "1177", "1178", "1179", "1180", "1181", "1182", "1183", "1191", "1192", "1193", "1194", "1195", "1196", "1197", "1198", "1199", "1200", "1205", "1206", "1207", "1208", "1209", "1210", "1211", "1212", "1213", "1214", "1215", "1216", "1217", "1218", "1219", "1220", "1221", "1222", "1223", "1224", "1231", "1232", "1233", "1234", "1235", "1236", "1237", "1238", "1239", "1240", "1241", "1242", "1243", "1244", "1245", "1253", "1254", "1255", "1256", "1257", "1258", "1263", "1264", "1265", "1266", "1267", "1268", "1269", "1270", "1271", "1272", "1273", "1274", "1281", "1282", "1283", "1284", "1285", "1286", "1287", "1288", "1289", "1290", "1291"]}; /*loaded by html_builder*/
+
+    function goToAnchor(vol, anchorId) {
+      if (vol != window.thisVolume) {
+        loadVolume(vol, false).then(res => {
+          console.log("Volume loaded");
+          console.log("Go to anchor " + anchorId);
+          /*move the volume page to the element with id=anchorId*/
+          /*var targetAnchor = document.getElementById(anchorId);
+          targetAnchor.scrollIntoView({block: 'nearest'});  // this does not always work...
+          console.log(targetAnchor);*/
+          /*window.location.hash = "";
+          window.location.hash = anchorId;
+          window.location.hash = anchorId;
+          console.log("#"+anchorId);*/
+          /*//This approach does not work at all: scrolls only main window.
+          var targetAnchor = $("#"+anchorId);
+          //$("#content").animate(
+          $("html, body").animate(
+            {scrollTop: targetAnchor.offset().top},
+            1000
+          );*/
+          /*//This approach does not work at all: scrolls only main window.
+          var targetAnchor = document.getElementById(anchorId);
+          var rect = targetAnchor.getBoundingClientRect();
+          console.log(targetAnchor);
+          console.log(rect);
+          var viewHeight=Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+          window.scroll({
+            top: rect.top + rect.height / 2 - viewHeight /2,
+            behavior: 'smooth'
+          });*/
+          /*var targetAnchor = document.getElementById(anchorId);
+          var contentDiv = document.getElementsByClassName("book-body")[0];
+          var topPos = contentDiv.offsetTop;
+          var windowSize = $(window).height();
+          console.log("topPos: " + topPos);
+          console.log("targetPos: " + targetAnchor.offsetTop);
+          console.log("windowSize:" + windowSize)
+          console.log("targetAnchor.offsetTop-windowSize/3 = " + (targetAnchor.offsetTop - topPos - windowSize / 2));
+          contentDiv.scrollTop = targetAnchor.offsetTop - topPos - windowSize / 2;*/
+          var targetAnchor = document.getElementById(anchorId);
+          targetAnchor.scrollIntoView({"block": "start"});
+        });
+      } else {
+        /*move the volume page to the element with id=anchorId*/
+        /*var targetAnchor = document.getElementById(anchorId);
+        targetAnchor.scrollIntoView({block: 'nearest'});  // this does not always work...
+        console.log(targetAnchor);*/
+        /*window.location.hash = "";
+        window.location.hash = anchorId;
+        window.location.hash = anchorId;
+        console.log("#"+anchorId);*/
+        /*//This approach does not work at all: scrolls only main window.
+        var targetAnchor = $("#"+anchorId);
+        //$("#content").animate(
+        $("html, body").animate(
+          {scrollTop: targetAnchor.offset().top},
+          1000
+        );*/
+        /*//This approach does not work at all: scrolls only main window.
+        var targetAnchor = document.getElementById(anchorId);
+        var rect = targetAnchor.getBoundingClientRect();
+        console.log(targetAnchor);
+        console.log(rect);
+        var viewHeight=Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        window.scroll({
+          top: rect.top + rect.height / 2 - viewHeight /2,
+          behavior: 'smooth'
+        });*/
+        /*var targetAnchor = document.getElementById(anchorId);
+        var contentDiv = document.getElementsByClassName("book-body")[0];
+        var topPos = contentDiv.offsetTop;
+        var windowSize = $(window).height();
+        console.log("topPos: " + topPos);
+        console.log("targetPos: " + targetAnchor.offsetTop);
+        console.log("windowSize:" + windowSize)
+        console.log("targetAnchor.offsetTop-windowSize/3 = " + (targetAnchor.offsetTop - topPos - windowSize / 2));
+        contentDiv.scrollTop = targetAnchor.offsetTop - topPos - windowSize / 2;*/
+        var targetAnchor = document.getElementById(anchorId);
+        targetAnchor.scrollIntoView({"block": "start"});
+      }
+    }
+
+    CollapsibleLists.apply();
+    console.log("Applied CollapsibleLists");
+
+    $(document).ready(function () {
+      console.log("Load initial volume " + thisVolume);
+      loadVolume(thisVolume).then(res => {
+        console.log("Initial volume loaded");
+        $('#loading').hide();
+        $('#loading').fadeOut("slow");
+      });
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+
+      $(".font-default").click(function () {
+
+        $('#wrapper').toggleClass("font-increase", "font-default");
+      });
+
+      $(".bi-lightbulb-off").click(function () {
+        $('.bi-lightbulb-off').toggleClass("bi-lightbulb", "bi-lightbulb-off");
+        $('.page-wrapper').toggleClass("night-mode", "");
+        $('.navbar-light').toggleClass("night-mode", "");
+        console.log(this);
+
+      });
+      $('.toc-item').click(function (event) {
+        /*console.log('toc item clicked');*/
+        event.preventDefault();
+        var clickedElement = event.target;
+        /*console.log(clickedElement);*/
+        var href = clickedElement.getAttribute("href");
+        /*console.log('href: '+href);*/
+        var vol = href.substring(0, 2);
+        var head = href.split('head').pop();
+        var anchorId = "head" + head;
+        goToAnchor(vol, anchorId);
+        return false;
+      });
+    });
+
+    function loadPageNumbers(vol, page) {
+      /*var pageSel = document.getElementById("page-select");*/
+      pageSel.innerHTML = '';
+      volPages[vol].forEach(function (p, index) {
+        pageSel.options[pageSel.options.length] = new Option(p, p);
+      });
+      if (page) {
+        pageSel.value = page;
+      }
+    }
+
+    function loadVolumeNumbers(vol) {
+      /*var volSel = document.getElementById("vol-select");*/
+      volSel.innerHTML = '';
+      /*console.log(Object.keys(volPages));*/
+      /*console.log(Object.keys(volPages).sort());*/
+
+      Object.keys(volPages).sort().forEach(function (v, index) {
+        /*console.log(v);*/
+        volSel.options[volSel.options.length] = new Option(v, v);
+      });
+      volSel.value = vol;
+    }
+
+    async function loadVolume(vol) {
+      /*Load volume json */
+      var page = pageSel.value;
+      $('#loading').show();
+      console.log("loading volume " + vol);
+      await $.getJSON(vol + ".json", function (json) {
+        console.log(json)
+        $('#content').empty().append(json["content"]);
+        /*console.log("json loaded");*/
+        window.thisVolume = vol;
+        $('#loading').hide();
+        $('#loading').fadeOut("slow");
+        /*Load volume and page numbers in page-nav form:*/
+        loadVolumeNumbers(vol);
+        loadPageNumbers(vol, page);
+        return true;
+      });
+    }
+
+
+    function padWithZeros(number, width) {
+      number = number + "";
+      if (number.length >= width) {
+        return number;
+      } else {
+        return new Array(width - number.length + 1).join("0") + number;
+      }
+    }
+    document.getElementById("nav-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      /*console.log("Clicked Go");*/
+      var vol = volSel.value;
+      console.log("vol: " + vol);
+      /*var targetPage = parseInt(pageSel.value, 10);
+      if (page >= 1) {
+        page = page-1; //page number is at bottom of page
+      }
+      var anchor = "v"+vol+"p"+padWithZeros(targetPage, 3);*/
+      var targetPage = pageSel.value;
+      var pages = volPages[vol];
+      var index = pages.indexOf(targetPage);
+      if (index > 0) {
+        targetPage = pages[index-1];
+      }
+
+      console.log("targetPage: " + targetPage);
+      var anchor = "v" + vol + "p" + targetPage;
+      goToAnchor(vol, anchor);
+      return false;
+    });
+
+    /*Adapt the page numbers list when the volume number changes:*/
+    volSel.addEventListener("change", function (event) {
+      var vol = this.value;
+      var page = pageSel.value;
+      loadPageNumbers(vol, page);
+    });
+
+
+  </script>
+</body>
+</html>
