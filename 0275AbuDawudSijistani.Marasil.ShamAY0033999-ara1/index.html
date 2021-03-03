@@ -1,0 +1,356 @@
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta http-equiv="Content-Security-Policy" https:=""/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" rel="stylesheet"/>
+<link href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&amp;display=swap" rel="stylesheet"/>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="../css/stylev2.css" rel="stylesheet" type="text/css"/>
+<script crossorigin="anonymous" src="../js/CollapsibleLists.js" type="application/javascript"></script>
+<!-- <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/style/style-components.min.css" /> -->
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<div id="loading">
+<img alt="Loading..." id="loading-image" src="../img/spinner1.gif"/>
+</div>
+<div class="page-wrapper toggled" id="wrapper">
+<div id="sidebar-wrapper">
+<html><body><div class="card-header title-heading">فصول الكتاب</div><ul class="collapsibleList">
+<li class="collapsibleListClosed">
+<a class="toc-item l1" href="01.html#head0">AUTO الكتاب: المراسيل</a>
+<ul class="collapsibleList">
+<li class="collapsibleListClosed">
+<a class="toc-item l2" href="01.html#head1">AUTO - باب الطهارة</a>
+</li><li class="collapsibleListClosed">
+<a class="toc-item l2" href="01.html#head2">AUTO - باب من الصلاة.</a>
+</li><li class="collapsibleListClosed">
+<a class="toc-item l2" href="01.html#head3">AUTO - كتاب الجهاد</a>
+</li><li class="collapsibleListClosed">
+<a class="toc-item l2" href="01.html#head4">AUTO - كتاب الوصايا.</a>
+</li><li class="collapsibleListClosed">
+<a class="toc-item l2" href="01.html#head5">AUTO - كتاب الفرائض.</a>
+</li><li class="collapsibleListClosed">
+<a class="toc-item l2" href="01.html#head6">AUTO - كتاب الفيء والإمارة.</a>
+</li><li class="collapsibleListClosed">
+<a class="toc-item l2" href="01.html#head7">AUTO - كتاب الضحايا والذبائح.</a>
+</li><li class="collapsibleListClosed">
+<a class="toc-item l2" href="01.html#head8">AUTO - كتاب اللباس.</a>
+</li><li class="collapsibleListClosed">
+<a class="toc-item l2" href="01.html#head9">AUTO - كتاب الترجل.</a>
+</li>
+</ul>
+</li>
+</ul>
+</body></html></div>
+<div class="book body-inner" lang="ara">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom" style="direction: ltr;">
+<div class="mr-auto d-flex justify-content-left">
+<a class="navbar-brand ms-2" href="http://www.kitab-project.org" target="_blank">
+<img class="d-inline-block align-top" src="https://cdn.jsdelivr.net/gh/sohailmerchant/kitab-cdn@main/img/kitab-logo.png" width="60px"/>
+</a>
+</div>
+<div class="navbar-nav mx-auto btn-toolbar" style="direction: rtl;">
+<div class="d-flex justify-content-center">
+<form class="row" id="nav-form" style="margin-bottom: 0px;">
+<span class="btn col justify-content-center">ج:</span>
+<select class="col form-select pull-left" id="vol-select"></select>
+<span class="btn col justify-content-center">ص:</span>
+<select class="col form-select pull-left" id="page-select"></select>
+<button class="btn col pull-right mx-3" id="nav-submdit-btn" style="width: 100px;" type="submit" value="Go">Go</button>
+</form>
+</div>
+</div>
+<div class="btn-toolbar navbar-nav ml-auto d-flex justify-content-right">
+<div class="btn-group">
+<a class="nav-link pull-right" title="Go to top">
+<i class="btn bi bi-arrow-up-circle" id="back-to-top"></i>
+</a>
+<a class="nav-link pull-right" title="Increase fonts">
+<i class="btn bi bi-fonts font-default pull-left"></i>
+</a>
+<a class="nav-link pull-right" title="Turn light off">
+<i class="btn bi bi-lightbulb-off"></i>
+</a>
+<div class="nav-link pull-right dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="" data-bs-toggle="dropdown" id="dropdownMenuButton" role="button" title="Book Metadata">
+<i class="btn bi bi-info"></i>
+</a>
+<div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+<div class="col-12" id="metadata-content"><label>char_length: 107979</label><label>author_lat_full_name: </label><label>author_lat_shuhra: </label><label>author_from_uri: Abu Dawud Sijistani</label><label>tags:  :: ShamAY@متون الحديث</label><label>url: https://raw.githubusercontent.com/OpenITI/0275AH/master/data/0275AbuDawudSijistani/0275AbuDawudSijistani.Marasil/0275AbuDawudSijistani.Marasil.ShamAY0033999-ara1</label><label>tok_length: 27832</label><label>status: pri</label><label>id: ShamAY0033999</label><label>ed_info: عبد الله بن مساعد الزهراني :: الأولى، 1408 ه :: دار الصميعي - الرياض</label><label>title_lat: Marasil</label><label>title_ar: المراسيل :: المراسيل ¶ المؤلف: أبو داود سليمان بن الأشعث السجستاني ¶ المتوفى: 275 ه ¶ المحقق: عبد الله بن مساعد الزهراني ¶ الناشر: دار الصميعي - الرياض ¶ الطبعة: الأولى، 1408 ه ¶ عدد الأجزاء: 1 ¶ ملاحظات: ¶ 1 - الكتاب موافق لطبعة دار الصميعي. ¶ 2 - الكتاب مقابل على طبعتي دار الصميعي والرسالة، مع الاستعانة بالنسخة الخطية في تصويب بعض التحريفات. ¶ مصدر الكتاب: مكتبة أحمد الخضري ¶ تاريخ آخر تعديل: 3 - 10 - 2013 م ¶ ملاحظة: [هذا الكتاب من كتب المستودع بموقع المكتبة الشاملة] :: المراسيل لأبي داود - ط الصميعي</label><label>book: 0275AbuDawudSijistani.Marasil</label><label>author_lat: Abu Dawud Sijistani</label><label>author_ar: السجستاني، أبو داود :: أبو داود سليمان بن الأشعث بن إسحاق بن بشير بن شداد بن عمرو الأزدي السجستاني :: أبو داود سليمان بن الأشعث السجستاني</label><label>date: 0275</label><label>versionUri: 0275AbuDawudSijistani.Marasil.ShamAY0033999-ara1</label>
+</div>
+</div>
+</div>
+<a class="nav-link pull-right" href="#menu-toggle" id="menu-toggle" title="Book Chapters">
+<i class="btn bi bi-list"></i></a>
+</div>
+</div>
+</nav>
+<div class="book-body fixed pt-5">
+<div class="row">
+<div class="col-12">
+<div class="row top-heading-panel content-outer-spacing">
+</div>
+</div>
+<div class="col-12" id="meta">
+</div>
+</div>
+<div class="row justify-content-md-center" id="book-main">
+<div class="col-lg-8 col-sm-12" id="content">
+</div>
+</div>
+<div class="row mt-5" id="footer">
+<div class="col-md-12">
+            The KITAB project is based at the Institute for the Study of Muslim Civilizations (ISMC) at Aga Khan
+            University, London, and has received funding from the European Research Council (ERC) under the European
+            Union's
+            Horizon 2020 research and innovation programme (Grant agreement No. 772989)
+
+          </div>
+<div class="col-md-12">
+<img alt="Logos" height="50" id="logos" src="../img/AKU-EU-ERC-three-logos.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+    var pageSel = document.getElementById("page-select");
+    var volSel = document.getElementById("vol-select");
+    var thisVolume = "01";
+    var volPages = {"01": ["001", "107", "108", "109", "109", "110", "111", "112", "112", "115", "116", "117", "118", "119", "120", "121", "121", "122", "123", "124", "125", "126", "127", "127", "129", "129", "130", "131", "133", "134", "135", "135", "136", "137", "138", "140", "140", "141", "143", "144", "144", "145", "146", "147", "149", "150", "151", "153", "155", "155", "156", "157", "159", "160", "160", "160", "161", "163", "164", "165", "165", "166", "167", "168", "168", "170", "171", "173", "174", "175", "176", "176", "177", "179", "180", "180", "181", "182", "183", "184", "185", "185", "186", "186", "186", "187", "188", "188", "190", "190", "191", "191", "192", "192", "193", "194", "195", "196", "197", "199", "199", "200", "202", "203", "204", "205", "206", "208", "209", "209", "210", "211", "213", "215", "215", "216", "217", "218", "219", "220", "220", "221", "221", "223", "223", "225", "225", "226", "226", "227", "227", "229", "229", "230", "231", "232", "233", "234", "234", "235", "236", "237", "238", "239", "241", "242", "242", "243", "243", "244", "245", "245", "246", "246", "247", "247", "248", "249", "250", "250", "251", "251", "251", "252", "253", "254", "254", "255", "255", "256", "256", "257", "257", "258", "258", "259", "260", "262", "263", "263", "264", "265", "266", "266", "267", "267", "269", "270", "270", "271", "271", "272", "273", "273", "274", "277", "277", "277", "278", "279", "280", "281", "282", "283", "283", "285", "286", "287", "288", "288", "289", "290", "291", "291", "292", "292", "293", "294", "295", "295", "295", "296", "297", "298", "299", "299", "300", "301", "301", "302", "303", "304", "305", "306", "307", "307", "308", "308", "309", "309", "310", "311", "312", "313", "314", "314", "315", "317", "317", "318", "319", "319", "320", "321", "323", "323", "324", "325", "325", "326", "327", "327", "328", "329", "329", "330", "331", "332", "332", "333", "335", "337", "337", "338", "339", "339", "340", "340", "340", "341", "342", "343", "344", "345", "345", "345", "347", "347", "349", "350", "351", "352", "353", "354", "355", "355", "356", "358", "358", "359", "360", "360", "361", "361", "362", "363", "363", "364", "364", "365", "366", "367", "368", "369", "370", "371", "371", "372", "373", "374", "375", "376", "377", "377", "378", "379", "379", "380", "381", "382", "383", "384", "385", "385", "386", "386", "387", "387", "388", "388", "389", "390", "391", "391", "392", "392", "393", "393", "395", "396", "397", "398", "399", "399", "400", "400", "401", "401", "402", "403", "403", "404", "404", "405", "407", "407", "408", "409", "410", "412", "413", "413", "414", "414", "415", "415", "416", "417", "418", "419", "420", "421", "421", "422", "423", "423", "424", "426", "426", "427", "428", "430", "430", "431", "432", "432", "434", "434", "435", "436", "437", "437", "438", "439", "439", "440", "441", "441", "442", "442", "442", "443", "444", "445", "446", "446", "447", "447", "448", "449", "449", "450", "452", "452", "453", "453", "454", "454", "455", "455", "456", "457", "458", "458", "460", "461", "461", "462", "462", "463", "464", "464", "465", "466", "467", "467", "468", "469", "470", "471", "471", "471", "472", "473", "473", "475", "475", "476", "477", "477", "478", "478", "479", "479", "480", "480", "481", "481", "482", "483", "484", "485", "486", "487", "488", "488", "489", "489", "490", "491", "491", "492", "492", "493", "493", "494", "494", "495", "496", "496", "497", "497", "498", "498", "498", "499", "500", "501", "501", "502", "503", "504", "504", "504", "505", "505", "505", "506", "507", "508", "508", "509", "510", "511", "511", "512", "513", "513", "514", "514", "515", "516", "516", "517", "518", "518", "519", "519", "520", "521", "522", "522", "523", "524", "524", "525", "526", "526", "527", "527", "528", "528", "529", "530", "530", "531", "531", "532", "532", "533", "533", "534", "534", "534", "535", "537", "537", "538", "538", "539", "540", "541", "542", "118", "120", "125", "130", "146", "306", "307", "365", "378", "383", "471"], "02": ["534"]}; /*loaded by html_builder*/
+
+    function goToAnchor(vol, anchorId) {
+      if (vol != window.thisVolume) {
+        loadVolume(vol, false).then(res => {
+          console.log("Volume loaded");
+          console.log("Go to anchor " + anchorId);
+          /*move the volume page to the element with id=anchorId*/
+          /*var targetAnchor = document.getElementById(anchorId);
+          targetAnchor.scrollIntoView({block: 'nearest'});  // this does not always work...
+          console.log(targetAnchor);*/
+          /*window.location.hash = "";
+          window.location.hash = anchorId;
+          window.location.hash = anchorId;
+          console.log("#"+anchorId);*/
+          /*//This approach does not work at all: scrolls only main window.
+          var targetAnchor = $("#"+anchorId);
+          //$("#content").animate(
+          $("html, body").animate(
+            {scrollTop: targetAnchor.offset().top},
+            1000
+          );*/
+          /*//This approach does not work at all: scrolls only main window.
+          var targetAnchor = document.getElementById(anchorId);
+          var rect = targetAnchor.getBoundingClientRect();
+          console.log(targetAnchor);
+          console.log(rect);
+          var viewHeight=Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+          window.scroll({
+            top: rect.top + rect.height / 2 - viewHeight /2,
+            behavior: 'smooth'
+          });*/
+          /*var targetAnchor = document.getElementById(anchorId);
+          var contentDiv = document.getElementsByClassName("book-body")[0];
+          var topPos = contentDiv.offsetTop;
+          var windowSize = $(window).height();
+          console.log("topPos: " + topPos);
+          console.log("targetPos: " + targetAnchor.offsetTop);
+          console.log("windowSize:" + windowSize)
+          console.log("targetAnchor.offsetTop-windowSize/3 = " + (targetAnchor.offsetTop - topPos - windowSize / 2));
+          contentDiv.scrollTop = targetAnchor.offsetTop - topPos - windowSize / 2;*/
+          var targetAnchor = document.getElementById(anchorId);
+          targetAnchor.scrollIntoView({"block": "start"});
+        });
+      } else {
+        /*move the volume page to the element with id=anchorId*/
+        /*var targetAnchor = document.getElementById(anchorId);
+        targetAnchor.scrollIntoView({block: 'nearest'});  // this does not always work...
+        console.log(targetAnchor);*/
+        /*window.location.hash = "";
+        window.location.hash = anchorId;
+        window.location.hash = anchorId;
+        console.log("#"+anchorId);*/
+        /*//This approach does not work at all: scrolls only main window.
+        var targetAnchor = $("#"+anchorId);
+        //$("#content").animate(
+        $("html, body").animate(
+          {scrollTop: targetAnchor.offset().top},
+          1000
+        );*/
+        /*//This approach does not work at all: scrolls only main window.
+        var targetAnchor = document.getElementById(anchorId);
+        var rect = targetAnchor.getBoundingClientRect();
+        console.log(targetAnchor);
+        console.log(rect);
+        var viewHeight=Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        window.scroll({
+          top: rect.top + rect.height / 2 - viewHeight /2,
+          behavior: 'smooth'
+        });*/
+        /*var targetAnchor = document.getElementById(anchorId);
+        var contentDiv = document.getElementsByClassName("book-body")[0];
+        var topPos = contentDiv.offsetTop;
+        var windowSize = $(window).height();
+        console.log("topPos: " + topPos);
+        console.log("targetPos: " + targetAnchor.offsetTop);
+        console.log("windowSize:" + windowSize)
+        console.log("targetAnchor.offsetTop-windowSize/3 = " + (targetAnchor.offsetTop - topPos - windowSize / 2));
+        contentDiv.scrollTop = targetAnchor.offsetTop - topPos - windowSize / 2;*/
+        var targetAnchor = document.getElementById(anchorId);
+        targetAnchor.scrollIntoView({"block": "start"});
+      }
+    }
+
+    CollapsibleLists.apply();
+    console.log("Applied CollapsibleLists");
+
+    $(document).ready(function () {
+      console.log("Load initial volume " + thisVolume);
+      loadVolume(thisVolume).then(res => {
+        console.log("Initial volume loaded");
+        $('#loading').hide();
+        $('#loading').fadeOut("slow");
+      });
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+
+      $(".font-default").click(function () {
+
+        $('#wrapper').toggleClass("font-increase", "font-default");
+      });
+
+      $(".bi-lightbulb-off").click(function () {
+        $('.bi-lightbulb-off').toggleClass("bi-lightbulb", "bi-lightbulb-off");
+        $('.page-wrapper').toggleClass("night-mode", "");
+        $('.navbar-light').toggleClass("night-mode", "");
+        console.log(this);
+
+      });
+      $('.toc-item').click(function (event) {
+        /*console.log('toc item clicked');*/
+        event.preventDefault();
+        var clickedElement = event.target;
+        /*console.log(clickedElement);*/
+        var href = clickedElement.getAttribute("href");
+        /*console.log('href: '+href);*/
+        var vol = href.substring(0, 2);
+        var head = href.split('head').pop();
+        var anchorId = "head" + head;
+        goToAnchor(vol, anchorId);
+        return false;
+      });
+    });
+
+    function loadPageNumbers(vol, page) {
+      /*var pageSel = document.getElementById("page-select");*/
+      pageSel.innerHTML = '';
+      volPages[vol].forEach(function (p, index) {
+        pageSel.options[pageSel.options.length] = new Option(p, p);
+      });
+      if (page) {
+        pageSel.value = page;
+      }
+    }
+
+    function loadVolumeNumbers(vol) {
+      /*var volSel = document.getElementById("vol-select");*/
+      volSel.innerHTML = '';
+      /*console.log(Object.keys(volPages));*/
+      /*console.log(Object.keys(volPages).sort());*/
+
+      Object.keys(volPages).sort().forEach(function (v, index) {
+        /*console.log(v);*/
+        volSel.options[volSel.options.length] = new Option(v, v);
+      });
+      volSel.value = vol;
+    }
+
+    async function loadVolume(vol) {
+      /*Load volume json */
+      var page = pageSel.value;
+      $('#loading').show();
+      console.log("loading volume " + vol);
+      await $.getJSON(vol + ".json", function (json) {
+        console.log(json)
+        $('#content').empty().append(json["content"]);
+        /*console.log("json loaded");*/
+        window.thisVolume = vol;
+        $('#loading').hide();
+        $('#loading').fadeOut("slow");
+        /*Load volume and page numbers in page-nav form:*/
+        loadVolumeNumbers(vol);
+        loadPageNumbers(vol, page);
+        return true;
+      });
+    }
+
+
+    function padWithZeros(number, width) {
+      number = number + "";
+      if (number.length >= width) {
+        return number;
+      } else {
+        return new Array(width - number.length + 1).join("0") + number;
+      }
+    }
+    document.getElementById("nav-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      /*console.log("Clicked Go");*/
+      var vol = volSel.value;
+      console.log("vol: " + vol);
+      /*var targetPage = parseInt(pageSel.value, 10);
+      if (page >= 1) {
+        page = page-1; //page number is at bottom of page
+      }
+      var anchor = "v"+vol+"p"+padWithZeros(targetPage, 3);*/
+      var targetPage = pageSel.value;
+      var pages = volPages[vol];
+      var index = pages.indexOf(targetPage);
+      if (index > 0) {
+        targetPage = pages[index-1];
+      }
+
+      console.log("targetPage: " + targetPage);
+      var anchor = "v" + vol + "p" + targetPage;
+      goToAnchor(vol, anchor);
+      return false;
+    });
+
+    /*Adapt the page numbers list when the volume number changes:*/
+    volSel.addEventListener("change", function (event) {
+      var vol = this.value;
+      var page = pageSel.value;
+      loadPageNumbers(vol, page);
+    });
+
+
+  </script>
+</body>
+</html>
