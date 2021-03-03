@@ -1,0 +1,21 @@
+{
+  "content": "\n<p>\n(¬1) [[هذا العنوان من طبعة الكتب العلمية]]\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v04p010'> Vol. 04, p. 010</a>\n            </div>\n            \n</p>\n\n<p>\n(¬1) [[هذا العنوان من طبعة الكتب العلمية]]\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v04p059'> Vol. 04, p. 059</a>\n            </div>\n            \n</p>\n\n<p>\n(¬1) [[هذا العنوان زيادة من طبعة الكتب العلمية]]\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v04p081'> Vol. 04, p. 081</a>\n            </div>\n            \n</p>\n\n<p>\n(¬1) [[من هنا إلى نهاية صفحة (132) لم يرد في طبعة الكتب العلمية، ولا\nمكان له هنا، وقد تقدم بنصه في هذه الطبعة صفحة (123)]]\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v04p131'> Vol. 04, p. 131</a>\n            </div>\n            \n</p>\n\n<p>\n(¬1) [[هذين البيتين من طبعة الكتب العلمية]]\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v04p135'> Vol. 04, p. 135</a>\n            </div>\n            \n</p>\n\n<p>\n(¬1) انتهى هاهنا ما وجد من النسخة الخطية المصورة من جامعة الإمام محمد بن\nسعود بالمملكة السعودية حفظها الله.\n</p>\n\n<p>\n[[وقد سقط من هذه الطبعة (350) صفحة، وهي موجودة في طبعة دار الكتب\nالعلمية، من الصفحة (1374) من المجلد الثالث إلى آخر هذا المجلد صفحة\n(1724)]]\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v04p161'> Vol. 04, p. 161</a>\n            </div>\n            \n</p>\n",
+  "pages": [
+    "010",
+    "059",
+    "081",
+    "131",
+    "135",
+    "161"
+  ],
+  "volumes": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ]
+}
