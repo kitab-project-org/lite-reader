@@ -1,0 +1,17 @@
+{
+  "content": "\n<p>\n(¬1) كلمة غير واضحة في الأصل.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p096'> Vol. 02, p. 096</a>\n            </div>\n            \n</p>\n\n<p>\n(¬1) طمس في الأصل بمقدار كلمة.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p182'> Vol. 02, p. 182</a>\n            </div>\n            \n</p>\n\n<p>\n(¬1) كلمة غير واضحة في الأصل.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p204'> Vol. 02, p. 204</a>\n            </div>\n            \n</p>\n\n<p>\n(¬1) طمس في الأصل بمقدار سطر.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p364'> Vol. 02, p. 364</a>\n            </div>\n            \n</p>\n\n<p>\n(¬1) بياض في الأصل.\n\n            <div class='pageno-container'>\n                <a class='pageno' href='#' id='v02p464'> Vol. 02, p. 464</a>\n            </div>\n            \n</p>\n",
+  "pages": [
+    "096",
+    "182",
+    "204",
+    "364",
+    "464"
+  ],
+  "volumes": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05"
+  ]
+}
